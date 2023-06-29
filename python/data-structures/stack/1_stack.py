@@ -38,6 +38,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual({'a': 98, 98: 'b'}, stack.pop())
         self.assertEqual((97, 96), stack.popleft())
 
+        self.assertEqual(deque([1, 2, 3, 'a', True, [99, 100]]), stack)
+
 
 if __name__ == '__main__':
     unittest.main()
