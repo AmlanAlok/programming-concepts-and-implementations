@@ -29,6 +29,9 @@ class TreeNode:
 
 class MyTestCase(unittest.TestCase):
 
+    def setUp(self) -> None:
+        print('\n')
+
     def test_1(self):
         print('Starting')
         root = TreeNode('Hiruzen Sarutobi')
