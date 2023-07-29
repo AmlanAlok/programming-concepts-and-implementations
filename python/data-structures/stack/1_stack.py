@@ -39,6 +39,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual((97, 96), stack.popleft())
 
         self.assertEqual(deque([1, 2, 3, 'a', True, [99, 100]]), stack)
+        stack.clear()
+        self.assertEqual(deque([]), stack)
 
 
 if __name__ == '__main__':
