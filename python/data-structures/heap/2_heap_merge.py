@@ -19,7 +19,8 @@ class MyTestCase(unittest.TestCase):
         p = list(heapq.merge(odd, even))
 
         self.assertEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], p)
-
+        self.assertEqual([10, 9, 8], heapq.nlargest(3, p))
+        self.assertEqual([1, 2, 3], heapq.nsmallest(3, p))
 
 
 if __name__ == '__main__':
